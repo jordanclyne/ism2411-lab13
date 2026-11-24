@@ -20,3 +20,19 @@ print("---Exercise 4: Two-Condition Filter---")
 big_south = df[(df['region'] == 'South') & (df['revenue'] > 1000)]
 print(len(big_south))
 print(big_south.head())
+
+print("---Exercise 5: A New Column---")
+df['per_unit'] = df['revenue'] / df['quantity']
+print(df.head())
+print(df['per_unit'].mean())
+
+print("---Exercise 6: Unique Values---")
+print(df['region'].unique())
+print(df['region'].value_counts())
+
+print("---Exercise 7: Select Columns---")
+df_filtered = df[['region', 'product', 'revenue']]
+print(df_filtered.shape)
+
+print("---Exercise 8: Save---")
+df.to_csv('data/explored.csv', index=False)
