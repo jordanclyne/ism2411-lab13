@@ -1,3 +1,11 @@
+#1. A Boolean filter uses a condition (True or False) to test each row in a table.
+#The rows that meet the condition are returned in a new table.
+#2. df["revenue"] returns a Series, whereas df[["revenue"]] returns a DataFrame.
+#A Series is a single column of data, while a DataFrame is a table with rows and columns.
+#3. Using pandas is more efficient than using Excel because it allows for automation.
+#Things that would require manual effort in Excel can be done automatically in seconds with pandas.
+#Additionally, pandas removes the need for clicking and copy-pasting.
+
 print("---Exercise 1: Load It---")
 
 import pandas as pd
